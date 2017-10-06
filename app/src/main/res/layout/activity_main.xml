@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="eu.gpatsiaouras.ledstripcontrol.MainActivity"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        >
+
+        <!--<TextView-->
+            <!--android:id="@+id/red_label"-->
+            <!--android:layout_width="16dp"-->
+            <!--android:layout_height="16dp"-->
+            <!--android:background="@android:color/holo_red_light"-->
+            <!--/>-->
+
+        <SeekBar
+            android:id="@+id/sb_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/custom_thumb_red"
+            android:minHeight="5dp"
+            android:minWidth="5dp"
+            android:maxHeight="5dp"
+            android:maxWidth="5dp"
+            android:progressDrawable="@drawable/custom_seekbar_style_red"
+            android:max="255"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        >
+
+        <!--<TextView-->
+            <!--android:id="@+id/green_label"-->
+            <!--android:layout_width="16dp"-->
+            <!--android:layout_height="16dp"-->
+            <!--android:background="@android:color/holo_green_light"-->
+            <!--/>-->
+
+        <SeekBar
+            android:id="@+id/sb_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/custom_thumb_green"
+            android:minHeight="5dp"
+            android:minWidth="5dp"
+            android:maxHeight="5dp"
+            android:maxWidth="5dp"
+            android:progressDrawable="@drawable/custom_seekbar_style_green"
+            android:max="255"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        >
+
+        <!--<TextView-->
+            <!--android:id="@+id/blue_label"-->
+            <!--android:layout_width="16dp"-->
+            <!--android:layout_height="16dp"-->
+            <!--android:background="@android:color/holo_blue_light"-->
+            <!--/>-->
+
+        <SeekBar
+            android:id="@+id/sb_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/custom_thumb_blue"
+            android:minHeight="5dp"
+            android:minWidth="5dp"
+            android:maxHeight="5dp"
+            android:maxWidth="5dp"
+            android:progressDrawable="@drawable/custom_seekbar_style_blue"
+            android:max="255"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:weightSum="1"
+        >
+        <Button
+            android:id="@+id/quick_turn_off"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@android:color/background_dark"
+            android:text="@string/quick_turn_off_label" />
+
+        <Button
+            android:id="@+id/quick_turn_white"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:background="@android:color/white"
+            android:text="@string/quick_white_label" />
+    </LinearLayout>
+</LinearLayout>
